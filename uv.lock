@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.12"
 resolution-markers = [
     "python_full_version >= '3.13'",
@@ -16,6 +16,7 @@ dependencies = [
     { name = "autogen-agentchat" },
     { name = "autogen-ext", extra = ["grpc", "mcp", "ollama", "openai"] },
     { name = "bs4" },
+    { name = "google" },
     { name = "gradio" },
     { name = "httpx" },
     { name = "ipywidgets" },
@@ -58,6 +59,7 @@ requires-dist = [
     { name = "autogen-agentchat", specifier = ">=0.4.9.2" },
     { name = "autogen-ext", extras = ["grpc", "mcp", "ollama", "openai"], specifier = ">=0.4.9.2" },
     { name = "bs4", specifier = ">=0.0.2" },
+    { name = "google", specifier = ">=3.0.0" },
     { name = "gradio", specifier = ">=5.22.0" },
     { name = "httpx", specifier = ">=0.28.1" },
     { name = "ipywidgets", specifier = ">=8.1.5" },
@@ -873,6 +875,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/00/f7/27f15d41f0ed38e8fcc488584b57e902b331da7f7c6dcda53721b15838fc/fsspec-2025.5.1.tar.gz", hash = "sha256:2e55e47a540b91843b755e83ded97c6e897fa0942b11490113f09e9c443c2475", size = 303033, upload-time = "2025-05-24T12:03:23.792Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/bb/61/78c7b3851add1481b048b5fdc29067397a1784e2910592bc81bb3f608635/fsspec-2025.5.1-py3-none-any.whl", hash = "sha256:24d3a2e663d5fc735ab256263c4075f374a174c3410c0b25e5bd1970bceaa462", size = 199052, upload-time = "2025-05-24T12:03:21.66Z" },
+]
+
+[[package]]
+name = "google"
+version = "3.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "beautifulsoup4" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/89/97/b49c69893cddea912c7a660a4b6102c6b02cd268f8c7162dd70b7c16f753/google-3.0.0.tar.gz", hash = "sha256:143530122ee5130509ad5e989f0512f7cb218b2d4eddbafbad40fd10e8d8ccbe", size = 44978, upload-time = "2020-07-11T14:50:45.678Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ac/35/17c9141c4ae21e9a29a43acdfd848e3e468a810517f862cad07977bf8fe9/google-3.0.0-py2.py3-none-any.whl", hash = "sha256:889cf695f84e4ae2c55fbc0cfdaf4c1e729417fa52ab1db0485202ba173e4935", size = 45258, upload-time = "2020-07-11T14:49:58.287Z" },
 ]
 
 [[package]]
