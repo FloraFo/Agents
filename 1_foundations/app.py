@@ -76,7 +76,7 @@ tools = [{"type": "function", "function": record_user_details_json},
 class Me:
 
     def __init__(self):
-        self.gemini = OpenAI(base_url=os.getenv("GEMINI_BASE_URL"), api_key=os.getenv("GOOGLE_API_KEY"))
+        self.gemini = OpenAI(base_url=os.getenv("GEMINI_BASE_URL"), api_key=os.getenv("GEMINI_API_KEY"))
         self.name = "Filomena Forina"
         reader = PdfReader("me/filoCV.pdf")
         self.linkedin = ""
